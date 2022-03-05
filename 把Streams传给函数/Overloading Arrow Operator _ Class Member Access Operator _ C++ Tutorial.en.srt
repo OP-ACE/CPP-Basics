@@ -1,0 +1,472 @@
+1
+00:00:00,530 --> 00:00:05,069
+hi this is Anil and welcome to the video
+
+2
+00:00:03,060 --> 00:00:07,020
+tutorial for the learning lag on Cypress
+
+3
+00:00:05,069 --> 00:00:09,480
+plus programming so in this tutorial
+
+4
+00:00:07,020 --> 00:00:12,360
+we're going to learn how to overload the
+
+5
+00:00:09,480 --> 00:00:14,910
+class member access operator so this
+
+6
+00:00:12,360 --> 00:00:17,279
+class member access operator is one of
+
+7
+00:00:14,910 --> 00:00:19,380
+the special operators available in C++
+
+8
+00:00:17,279 --> 00:00:21,930
+you know it is nothing but the arrow
+
+9
+00:00:19,380 --> 00:00:24,750
+operator so this arrow operator is a
+
+10
+00:00:21,930 --> 00:00:27,390
+point operator and also called the class
+
+11
+00:00:24,750 --> 00:00:30,210
+member operator so this operator is
+
+12
+00:00:27,390 --> 00:00:33,149
+considered as a unary operator when
+
+13
+00:00:30,210 --> 00:00:35,130
+overloading so the general usage of this
+
+14
+00:00:33,149 --> 00:00:37,620
+arrow operator is you know we used to
+
+15
+00:00:35,130 --> 00:00:41,600
+have an object and then the arrow
+
+16
+00:00:37,620 --> 00:00:44,820
+operator and then the element so here
+
+17
+00:00:41,600 --> 00:00:46,620
+the object is the object that activates
+
+18
+00:00:44,820 --> 00:00:49,770
+the call so this object is going to call
+
+19
+00:00:46,620 --> 00:00:52,890
+the operator function for this arrow
+
+20
+00:00:49,770 --> 00:00:54,899
+operator that we write and also when you
+
+21
+00:00:52,890 --> 00:00:58,260
+overload this arrow operator or the
+
+22
+00:00:54,899 --> 00:01:00,539
+class member access operator the
+
+23
+00:00:58,260 --> 00:01:04,289
+operator function must return a pointer
+
+24
+00:01:00,539 --> 00:01:07,010
+to an object of the class where we
+
+25
+00:01:04,290 --> 00:01:10,250
+overload this arrow operator
+
+26
+00:01:07,010 --> 00:01:14,490
+so here the element must be some member
+
+27
+00:01:10,250 --> 00:01:15,900
+accessible within the object so now you
+
+28
+00:01:14,490 --> 00:01:18,420
+know we can see how to overload this
+
+29
+00:01:15,900 --> 00:01:19,950
+operator in our program so just for the
+
+30
+00:01:18,420 --> 00:01:23,070
+demonstration purpose I have already
+
+31
+00:01:19,950 --> 00:01:25,770
+created a class in this program and we
+
+32
+00:01:23,070 --> 00:01:28,789
+have a class called marks and we have a
+
+33
+00:01:25,770 --> 00:01:30,780
+member called mark and we have a public
+
+34
+00:01:28,790 --> 00:01:32,310
+constructor and which is going to take
+
+35
+00:01:30,780 --> 00:01:35,130
+one value and it's going to initialize
+
+36
+00:01:32,310 --> 00:01:37,200
+the member mark and also we have a
+
+37
+00:01:35,130 --> 00:01:40,110
+public method you know which is going to
+
+38
+00:01:37,200 --> 00:01:42,810
+print out the value store in this member
+
+39
+00:01:40,110 --> 00:01:44,909
+mark all right the next thing that we're
+
+40
+00:01:42,810 --> 00:01:47,399
+going to do is we can have overload the
+
+41
+00:01:44,909 --> 00:01:50,399
+arrow operator or we going to overload
+
+42
+00:01:47,399 --> 00:01:52,890
+the class member access operator so this
+
+43
+00:01:50,399 --> 00:01:54,960
+class member access operator is one of
+
+44
+00:01:52,890 --> 00:01:57,630
+the special operator available in C++
+
+45
+00:01:54,960 --> 00:01:59,789
+and that's why we cannot use friend
+
+46
+00:01:57,630 --> 00:02:02,070
+function to overload this operator and
+
+47
+00:01:59,790 --> 00:02:05,040
+also the operator function that we can
+
+48
+00:02:02,070 --> 00:02:08,399
+write must be a non-static member of
+
+49
+00:02:05,040 --> 00:02:11,060
+this class all right now here first we
+
+50
+00:02:08,399 --> 00:02:13,250
+need to specify the return type
+
+51
+00:02:11,060 --> 00:02:15,319
+and also I told you that you know the
+
+52
+00:02:13,250 --> 00:02:17,990
+operator function must return a pointer
+
+53
+00:02:15,319 --> 00:02:20,119
+to an object of the class where this
+
+54
+00:02:17,990 --> 00:02:23,209
+operator function is defined and that's
+
+55
+00:02:20,120 --> 00:02:27,080
+why it's going to be a pointer of this
+
+56
+00:02:23,209 --> 00:02:30,080
+class marks marks star and then the
+
+57
+00:02:27,080 --> 00:02:33,739
+keyword operator and then the operator
+
+58
+00:02:30,080 --> 00:02:36,290
+symbol which is this arrow operator and
+
+59
+00:02:33,739 --> 00:02:38,840
+then a pair of parentheses and between
+
+60
+00:02:36,290 --> 00:02:41,269
+that parenthesis no parameters that's
+
+61
+00:02:38,840 --> 00:02:43,519
+because you know this arrow operator or
+
+62
+00:02:41,270 --> 00:02:46,160
+this class member access operator is
+
+63
+00:02:43,519 --> 00:02:48,230
+considered as a unary operator and the
+
+64
+00:02:46,160 --> 00:02:51,799
+only operand is going to work on will be
+
+65
+00:02:48,230 --> 00:02:54,679
+implicitly passed by the C++ so here
+
+66
+00:02:51,800 --> 00:02:57,470
+inside this operator function we just
+
+67
+00:02:54,680 --> 00:03:00,470
+gonna return the this pointer so it's
+
+68
+00:02:57,470 --> 00:03:04,250
+going to be returned and this that's it
+
+69
+00:03:00,470 --> 00:03:06,140
+so now we have overloaded the arrow
+
+70
+00:03:04,250 --> 00:03:08,300
+operator or the class member access
+
+71
+00:03:06,140 --> 00:03:10,730
+operator next we're going to create an
+
+72
+00:03:08,300 --> 00:03:14,600
+object of this class marks and let's say
+
+73
+00:03:10,730 --> 00:03:18,130
+marks and Anil smoke the object name and
+
+74
+00:03:14,600 --> 00:03:21,590
+we can initialize that for example 65
+
+75
+00:03:18,130 --> 00:03:24,109
+now we can access this what's your mark
+
+76
+00:03:21,590 --> 00:03:26,900
+methyl since it is public you know this
+
+77
+00:03:24,110 --> 00:03:30,230
+mark is private by using the dot
+
+78
+00:03:26,900 --> 00:03:32,299
+operator and to do that we need to write
+
+79
+00:03:30,230 --> 00:03:36,018
+the object name that is Anil's mark and
+
+80
+00:03:32,299 --> 00:03:39,459
+then dot operator and then the method in
+
+81
+00:03:36,019 --> 00:03:39,459
+that is was your mark
+
+82
+00:03:39,790 --> 00:03:47,200
+alright so now we have overloaded this
+
+83
+00:03:44,480 --> 00:03:50,929
+error operator that's why we can use
+
+84
+00:03:47,200 --> 00:03:53,899
+this operator just like the way we were
+
+85
+00:03:50,930 --> 00:03:56,180
+using this dot operator so we can also
+
+86
+00:03:53,900 --> 00:03:58,940
+access this by using the arrow operator
+
+87
+00:03:56,180 --> 00:04:01,070
+so we don't have a pointer here and
+
+88
+00:03:58,940 --> 00:04:04,160
+first I'm going to run this and then I'm
+
+89
+00:04:01,070 --> 00:04:06,108
+going to expand it so build and run all
+
+90
+00:04:04,160 --> 00:04:09,739
+right now you guys can see we got a hey
+
+91
+00:04:06,109 --> 00:04:12,709
+I got 65 marks and hey I got 65 marks so
+
+92
+00:04:09,739 --> 00:04:14,780
+we have accessed this member metal was
+
+93
+00:04:12,709 --> 00:04:17,238
+your mark by using the dot operator and
+
+94
+00:04:14,780 --> 00:04:18,228
+arrow operator so here when we use this
+
+95
+00:04:17,238 --> 00:04:20,209
+arrow operator
+
+96
+00:04:18,228 --> 00:04:22,340
+you know this onion smoke is going to
+
+97
+00:04:20,209 --> 00:04:23,900
+call the operator function and this
+
+98
+00:04:22,340 --> 00:04:28,190
+object will be passed as a current
+
+99
+00:04:23,900 --> 00:04:30,229
+object to this operator function so the
+
+100
+00:04:28,190 --> 00:04:33,080
+this pointer is going to contain the
+
+101
+00:04:30,230 --> 00:04:35,479
+address of this object passed and that's
+
+102
+00:04:33,080 --> 00:04:40,909
+why you know this operator is gonna
+
+103
+00:04:35,479 --> 00:04:42,919
+return the pointer so here when we use
+
+104
+00:04:40,910 --> 00:04:44,690
+this dot operator we are referring that
+
+105
+00:04:42,919 --> 00:04:47,150
+through object because of this
+
+106
+00:04:44,690 --> 00:04:49,580
+overloaded arrow operator you know we
+
+107
+00:04:47,150 --> 00:04:51,919
+get the address here because of the
+
+108
+00:04:49,580 --> 00:04:54,169
+return statement of this this here so
+
+109
+00:04:51,919 --> 00:04:56,659
+that's why we can access that just like
+
+110
+00:04:54,169 --> 00:04:59,479
+the way we were using the the pointer
+
+111
+00:04:56,660 --> 00:05:01,550
+and the arrow operator so this is how
+
+112
+00:04:59,479 --> 00:05:04,669
+you guys can overload the arrow operator
+
+113
+00:05:01,550 --> 00:05:06,919
+or the class member axis operator in C++
+
+114
+00:05:04,669 --> 00:05:09,349
+so thank you for watching this dome for
+
+115
+00:05:06,919 --> 00:05:11,570
+to subscribe and like my facebook page
+
+116
+00:05:09,350 --> 00:05:13,280
+and and stay updated with the latest
+
+117
+00:05:11,570 --> 00:05:16,210
+videos that we're gonna make and I'll
+
+118
+00:05:13,280 --> 00:05:16,210
+see you know next tutorial
+
