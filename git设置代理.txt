@@ -1,3 +1,9 @@
+git add .
+git commit ""
+git push
+
+
+
 对于 git, 只需要用下面的明亮就可以了
 
 git config --global https.proxy    http://127.0.0.1:7890
