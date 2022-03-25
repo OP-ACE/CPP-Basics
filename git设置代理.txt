@@ -1,0 +1,15 @@
+对于 git, 只需要用下面的明亮就可以了
+
+git config --global https.proxy    http://127.0.0.1:7890
+git config --global https.proxy   https://127.0.0.1:7890
+git config --global  http.proxy 'socks5://127.0.0.1:7890'
+git config --global https.proxy 'socks5://127.0.0.1:7890'
+
+如果想要取消：
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+
+作者：英武
+链接：https://www.jianshu.com/p/684694bbe3f9
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
